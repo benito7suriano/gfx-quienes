@@ -21,11 +21,11 @@ h1 {
   background-image: url(./web-producto-24.png);
   background-color: #cccccc; /* Used if the image is unavailable */
   position: relative;
-  left: 0;
+  left: 0px;
   top: -25px;
   height: 100vh; /* You must set a specified height */
   width: 100vw;
-  background-position: center; /* Center the image */
+  background-position: left top; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   display: flex;
@@ -36,19 +36,19 @@ h1 {
 
 /* Navbar */
 
-#nav {
+nav {
   position: fixed;
   background-color: transparent;
   width: 100vw;
   height: 10vh;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
 nav :hover {
-  background-color: rgba(49, 49, 49,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 
 }
 
@@ -56,11 +56,14 @@ nav :hover {
   margin-right: 1rem;
 }
 
-#nav-logo {
-  margin: 0;
-  width: auto;
-  height: 100%;
-  background-color: inherit;
+.nav-logo {
+  width: auto !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+nav ul {
+  width: 100%;
 }
 
 #gfx {
@@ -77,12 +80,6 @@ nav :hover {
   flex-direction: row;
   justify-content: flex-start;
   width: 10%;
-}
-
-
-.navbar {
-  width: 100vw;
-  background-color: transparent;
 }
 
 .nav-opts {
