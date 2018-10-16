@@ -13,7 +13,25 @@ body {
   align-content: center;
 }
 
+.title-ribbon {
+  position: absolute;
+  top: 20rem;
+  background-color: rgba(0,0,0,0.4);
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
 h1 {
+  padding-left: 2rem;
+  font-size: 5rem;
+  color: white;
+}
+
+h2 {
   font-size: 2rem;
   font-family: 'Gotham Book';
   text-transform: uppercase;
@@ -46,9 +64,9 @@ nav {
   position: fixed;
   background-color: transparent;
   width: 100%;
-  height: 10%;
+  height: 7%;
   left: 0;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
